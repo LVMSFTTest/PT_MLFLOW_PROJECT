@@ -13,18 +13,38 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Build Docker image
-        run: docker build -t poomathi/mlflow_streamlit:latest .
-
-      - name: Push Docker image to Docker Hub
-        run: docker push poomathi/mlflow_streamlit:latest
+      - name: Build and Push Docker Image
+        run: |
+          docker build -t poomathi/mlflow_streamlit:latest .
+          docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
+          docker tag mlflow_streamlit:latest poomathi/mlflow_streamlit:latest
+          docker push poomathi/mlflow_streamlit:latest
+        env:
+          DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+          DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+          DOCKER_REGISTRY: your-docker-registry
+          
 
       - name: Deploy Streamlit App
         run: |
           # Add commands to deploy your Streamlit app here
           # This could involve SSHing into a server or deploying to a platform like Heroku, AWS, or GCP.
 
-      - name: Deploy ML Model with MLflow
+      - name: Start MLflow Server #Deploy ML Model with MLflow
         run: |
-          # Add commands to deploy your ML model with MLflow here
-          # This could involve starting a MLflow server or deploying to a specific environment.
+        mlflow server --host 0.0.0.0 --port 5000 &
+        sleep 5
+          
+      - name: Deploy MLflow Model
+        run: |
+          mlflow models serve -m runs:/d94ed5e555614b0faea846186ed68abe/model -p 8000
+          
+          env:
+          MLFLOW_EXPERIMENT_NAME: your-experiment-name
+          RUN_ID: d94ed5e555614b0faea846186ed68abe  # or specify a specific run ID
+        - name: Test Deployment
+        run: |
+          # Add any testing steps you want to perform after deployment
+          curl http://localhost:8000/ping
+
+
