@@ -1,0 +1,30 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Build Docker image
+        run: docker build -t poomathi/mlflow_streamlit:latest .
+
+      - name: Push Docker image to Docker Hub
+        run: docker push poomathi/mlflow_streamlit:latest
+
+      - name: Deploy Streamlit App
+        run: |
+          # Add commands to deploy your Streamlit app here
+          # This could involve SSHing into a server or deploying to a platform like Heroku, AWS, or GCP.
+
+      - name: Deploy ML Model with MLflow
+        run: |
+          # Add commands to deploy your ML model with MLflow here
+          # This could involve starting a MLflow server or deploying to a specific environment.
