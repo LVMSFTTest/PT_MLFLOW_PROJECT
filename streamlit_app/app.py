@@ -1,10 +1,12 @@
 import streamlit as st
 import pandas as pd
 import mlflow.pyfunc
+import os
 
 # Load the MLflow model
 #model = mlflow.pyfunc.load_model("http://127.0.0.1:5000/#/experiments/0/runs/d94ed5e555614b0faea846186ed68abe/artifacts/model")
-artifact_uri="runs:/d94ed5e555614b0faea846186ed68abe/model"
+
+artifact_uri=os.path.join("runs", "e7ab217c6222486cb105bd556f1956c2", "model")
 model = mlflow.pyfunc.load_model(artifact_uri)
 
 st.title("Churn Analysis Prediction App")

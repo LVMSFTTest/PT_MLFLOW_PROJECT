@@ -16,5 +16,5 @@ RUN pip install -r ml_model/requirements.txt
 EXPOSE 8501
 
 # Run app.py when the container launches
-CMD ["streamlit", "run", "app.py"]
+CMD ["streamlit", "run", "streamlit_app/app_monitor.py"]
 
