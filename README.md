@@ -1,4 +1,4 @@
-**1. **Build ML Model - Random Foreast GRID SEARCH****
+**1.Build ML Model - Random Foreast GRID SEARCH**
    
   1. Generate sample 1000 churn data
   2. Data preprocessing- EDA
