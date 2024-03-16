@@ -16,3 +16,8 @@
     1. build docker image which calls streamlit app and run
     
 **4. Create CI/CD actions in Git which run docker image and explain steps** 
+
+**IMPROVISON:**
+
+      Fetch the latest logged model mlflow under a particular environment instead of giving run_id of best-logged model in streamlit app
+      for both model monitoring and churn prediction - DO EDA and Preprocessing before run best model 
