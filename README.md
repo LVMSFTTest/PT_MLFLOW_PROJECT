@@ -1,3 +1,5 @@
+CI/CD AUTOMATION: Our key objective is to establish a comprehensive automated pipeline. We utilize Docker for efficient containerization, facilitating the construction of ML models for churn prediction in Python. These models are meticulously logged using MLflow for enhanced tracking and management. We then develop a user-friendly Streamlit front-end application for seamless model deployment. To ensure smooth execution, the entire application, along with its dependencies, is encapsulated within a Docker container. Continuous integration and deployment are managed through GitHub Actions, providing a robust CI/CD framework for iterative development and delivery
+
 **1.Build ML Model - Random Foreast GRID SEARCH**
    
      1. Generate sample 1000 churn data
