@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Vetri%20GP/PT_MLFLOW_PROJECT/ml_model/mlruns/0/f684ba1d8d68432f8eb5b0a385a7996e/artifacts
+end_time: 1710823849106
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f684ba1d8d68432f8eb5b0a385a7996e
+run_name: able-skunk-460
+run_uuid: f684ba1d8d68432f8eb5b0a385a7996e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710823830870
+status: 3
+tags: []
+user_id: Vetri GP

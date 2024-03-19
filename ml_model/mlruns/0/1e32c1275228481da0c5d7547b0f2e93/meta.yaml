@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Vetri%20GP/PT_MLFLOW_PROJECT/ml_model/mlruns/0/1e32c1275228481da0c5d7547b0f2e93/artifacts
+end_time: 1710827257052
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1e32c1275228481da0c5d7547b0f2e93
+run_name: unequaled-yak-866
+run_uuid: 1e32c1275228481da0c5d7547b0f2e93
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710827232510
+status: 3
+tags: []
+user_id: Vetri GP

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Vetri%20GP/PT_MLFLOW_PROJECT/ml_model/mlruns/0/bbe01119b29841af8ce72a7c8aeebe98/artifacts
+end_time: 1710823847668
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: bbe01119b29841af8ce72a7c8aeebe98
+run_name: casual-lark-740
+run_uuid: bbe01119b29841af8ce72a7c8aeebe98
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710823830870
+status: 3
+tags: []
+user_id: Vetri GP

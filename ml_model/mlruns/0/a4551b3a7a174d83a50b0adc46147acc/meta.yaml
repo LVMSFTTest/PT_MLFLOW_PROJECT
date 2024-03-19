@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Vetri%20GP/PT_MLFLOW_PROJECT/ml_model/mlruns/0/a4551b3a7a174d83a50b0adc46147acc/artifacts
+end_time: 1710828865415
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a4551b3a7a174d83a50b0adc46147acc
+run_name: capricious-sheep-579
+run_uuid: a4551b3a7a174d83a50b0adc46147acc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710828829202
+status: 3
+tags: []
+user_id: Vetri GP

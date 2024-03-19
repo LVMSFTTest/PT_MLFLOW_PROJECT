@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Vetri%20GP/PT_MLFLOW_PROJECT/ml_model/aedcbe4d96f443d0bdf1c4b6e05a469d/artifacts
+end_time: 1710826481421
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: aedcbe4d96f443d0bdf1c4b6e05a469d
+run_name: skittish-sponge-945
+run_uuid: aedcbe4d96f443d0bdf1c4b6e05a469d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710826458792
+status: 3
+tags: []
+user_id: Vetri GP

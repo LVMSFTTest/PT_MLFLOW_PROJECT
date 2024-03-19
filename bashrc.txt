@@ -1,0 +1,2 @@
+export PATH="/C:/Users/Vetri GP/PT_MLFLOW_PROJECT/ml_model/mlruns/0:$PATH"
+

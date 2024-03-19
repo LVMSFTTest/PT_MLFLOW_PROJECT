@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Vetri%20GP/PT_MLFLOW_PROJECT/ml_model/mlruns/0/ba379ab3a40d413cb0e83a64e4e6ecde/artifacts
+end_time: 1710828865415
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ba379ab3a40d413cb0e83a64e4e6ecde
+run_name: wistful-pig-334
+run_uuid: ba379ab3a40d413cb0e83a64e4e6ecde
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710828829202
+status: 3
+tags: []
+user_id: Vetri GP

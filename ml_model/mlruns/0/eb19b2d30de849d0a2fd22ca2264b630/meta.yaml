@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Vetri%20GP/PT_MLFLOW_PROJECT/ml_model/eb19b2d30de849d0a2fd22ca2264b630/artifacts
+end_time: 1710826802171
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: eb19b2d30de849d0a2fd22ca2264b630
+run_name: trusting-rook-53
+run_uuid: eb19b2d30de849d0a2fd22ca2264b630
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710826799137
+status: 3
+tags: []
+user_id: Vetri GP

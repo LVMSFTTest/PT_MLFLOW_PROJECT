@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Vetri%20GP/PT_MLFLOW_PROJECT/ml_model/mlruns/0/3c1d8400adfd4e8fa5d47d2e34342a61/artifacts
+end_time: 1710827232456
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3c1d8400adfd4e8fa5d47d2e34342a61
+run_name: respected-kite-885
+run_uuid: 3c1d8400adfd4e8fa5d47d2e34342a61
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710827229746
+status: 3
+tags: []
+user_id: Vetri GP

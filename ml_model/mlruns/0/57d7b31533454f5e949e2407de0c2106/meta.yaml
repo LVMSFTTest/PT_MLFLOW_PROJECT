@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Vetri%20GP/PT_MLFLOW_PROJECT/ml_model/mlruns/0/57d7b31533454f5e949e2407de0c2106/artifacts
+end_time: 1710823847668
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 57d7b31533454f5e949e2407de0c2106
+run_name: debonair-shrimp-499
+run_uuid: 57d7b31533454f5e949e2407de0c2106
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710823830870
+status: 3
+tags: []
+user_id: Vetri GP

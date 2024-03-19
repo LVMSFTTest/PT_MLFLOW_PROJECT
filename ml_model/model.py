@@ -398,6 +398,8 @@ mlflow.log_metric("score", score)
 mlflow.sklearn.log_model(lr, "model")
 
 from sklearn.model_selection import GridSearchCV
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
+import mlflow
 
 # Define parameter grid for hyperparameter tuning
 param_grid = {
@@ -415,6 +417,22 @@ best_score = grid_search.best_score_
 print(f"Best Model Score: {best_score}")
 
 mlflow.log_metric("best_score", best_score)
+# Make predictions using the best model
+y_pred = best_model.predict(X_test)
+
+# Calculate precision, recall, and F1 score
+accuracy = accuracy_score(y_test, y_pred)
+precision = precision_score(y_test, y_pred)
+recall = recall_score(y_test, y_pred)
+f1 = f1_score(y_test, y_pred)
+
+# Log precision, recall, and F1 score to MLflow
+mlflow.log_metric("accuracy", accuracy)
+mlflow.log_metric("precision", precision)
+mlflow.log_metric("recall", recall)
+mlflow.log_metric("f1", f1)
+
+# Log the best model to MLflow
 mlflow.sklearn.log_model(best_model, "model")
 
 print("Model saved in run %s" % mlflow.active_run().info.run_uuid)
@@ -434,7 +452,14 @@ input=pd.read_csv("input_new.csv")
 
 import mlflow.pyfunc
 
-model =mlflow.pyfunc.load_model("runs:/d94ed5e555614b0faea846186ed68abe/model")
+# Get the run ID of the best run
+run_id_best = mlflow.active_run().info.run_uuid
+
+# Construct the URI for the model based on the run ID
+model_uri = "runs:/{}/model".format(run_id_best)
+
+# Load the model using the model URI
+model = mlflow.pyfunc.load_model(model_uri)
 
 
 # In[41]:

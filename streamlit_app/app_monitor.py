@@ -5,6 +5,12 @@ import mlflow
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 import time
 import base64  # Add this import statement
+import os
+
+# Change the working directory to the directory containing the MLflow logged model
+os.chdir('C:/Users/Vetri GP/PT_MLFLOW_PROJECT/ml_model')
+
+# Now you can load the MLflow model using relative paths
 
 # Set MLflow tracking URI
 mlflow.set_tracking_uri("http://localhost:5000")
@@ -66,7 +72,7 @@ def render_model_monitoring():
         Y = current_data["churn"]
         X = pd.get_dummies(X, drop_first=True)
 
-        artifact_uri = "runs:/2956f1fcd7b74ed9be2d85df3b554ddc/model"
+        artifact_uri = "runs:/5d1992154e344218a78b0fcf1d83df99/model"
         model = mlflow.pyfunc.load_model(artifact_uri)
         # Make predictions using the model
         predicted_labels = model.predict(X)
@@ -109,7 +115,7 @@ def render_model_monitoring():
 # Function to render churn model prediction section
 def render_churn_prediction():
     st.header("Churn Model Prediction App")
-    artifact_uri = "runs:/d94ed5e555614b0faea846186ed68abe/model"
+    artifact_uri = "runs:/5d1992154e344218a78b0fcf1d83df99/model"
     model = mlflow.pyfunc.load_model(artifact_uri)
 
     # Upload CSV file through Streamlit

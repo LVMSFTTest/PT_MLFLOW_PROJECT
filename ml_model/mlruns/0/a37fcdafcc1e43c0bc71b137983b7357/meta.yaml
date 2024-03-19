@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Vetri%20GP/PT_MLFLOW_PROJECT/ml_model/mlruns/0/a37fcdafcc1e43c0bc71b137983b7357/artifacts
+end_time: 1710828865415
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a37fcdafcc1e43c0bc71b137983b7357
+run_name: enthused-crane-673
+run_uuid: a37fcdafcc1e43c0bc71b137983b7357
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710828829202
+status: 3
+tags: []
+user_id: Vetri GP

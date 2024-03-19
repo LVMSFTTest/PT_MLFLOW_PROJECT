@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Vetri%20GP/PT_MLFLOW_PROJECT/ml_model/mlruns/0/d5a63f56125a4b9b8ca63f0b815384e0/artifacts
+end_time: 1710817537138
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d5a63f56125a4b9b8ca63f0b815384e0
+run_name: adventurous-doe-665
+run_uuid: d5a63f56125a4b9b8ca63f0b815384e0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710817519430
+status: 3
+tags: []
+user_id: Vetri GP

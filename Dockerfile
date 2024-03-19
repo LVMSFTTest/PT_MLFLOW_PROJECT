@@ -8,13 +8,16 @@ WORKDIR /app
 COPY . /app
 
 
-RUN pip install -r streamlit_app/requirements.txt
-RUN pip install -r ml_model/requirements.txt
+# Install Python dependencies for Streamlit app and ML model
+RUN pip install --no-cache-dir -r streamlit_app/requirements.txt \
+    && pip install --no-cache-dir -r ml_model/requirements.txt
 
 
-# Expose the port that Streamlit will run on
+# Expose the port the app runs on
 EXPOSE 8501
+
+# Define environment variable
+ENV PORT=8501
 
 # Run app.py when the container launches
 CMD ["streamlit", "run", "streamlit_app/app_monitor.py"]
-
